@@ -18,16 +18,16 @@ namespace Ticketing_system
                 Console.WriteLine("1) Read Ticket");
                 Console.WriteLine("2) Create Ticket");
                 Console.WriteLine("Enter any other key to exit.");
-                // input response
+                
                 choice = Console.ReadLine();
 
                 if (choice == "1")
                 {
-                    // TODO: read data from file
+                    
                   if (File.Exists(file))
                     {
                         
-                        // read data from file
+                        
                         StreamReader sr = new StreamReader(file);
                         while (!sr.EndOfStream)
                         {
@@ -40,7 +40,7 @@ namespace Ticketing_system
                 }
                 else if (choice == "2")
                 {
-                    // TODO: create file from data
+                    
                     StreamWriter sw = new StreamWriter(file);
                     for (int i = 0; i < 7; i++)
                     {
